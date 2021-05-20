@@ -14,6 +14,7 @@ RUN apt update -y && \
     wget 'https://github.com/mayswind/AriaNg/archive/refs/heads/master.zip' && \
     unzip master.zip 
 COPY system /system
+COPY index.html /usr/share/index.html
 RUN chmod +x /system/conf.d/websockify.sh
 RUN chmod +x /system/supervisor.sh
 
