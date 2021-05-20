@@ -10,8 +10,9 @@ RUN apt update -y && \
     unzip rclone-current-linux-amd64.zip && \
     cp /rclone-*-linux-amd64/rclone /usr/bin/ && \
     chown root:root /usr/bin/rclone && \
-    chmod 755 /usr/bin/rclone
-
+    chmod 755 /usr/bin/rclone && \
+    wget 'https://github.com/mayswind/AriaNg/archive/refs/heads/master.zip' && \
+    unzip master.zip 
 COPY system /system
 RUN chmod +x /system/conf.d/websockify.sh
 RUN chmod +x /system/supervisor.sh
