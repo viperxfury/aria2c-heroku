@@ -1,4 +1,4 @@
-FROM 
+FROM kalilinux/kali-rolling
 RUN apt update -y && \
     apt install aria2 && \
     apt install supervisor && \
