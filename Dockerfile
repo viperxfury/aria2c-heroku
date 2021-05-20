@@ -1,11 +1,11 @@
 FROM kalilinux/kali-rolling
 RUN apt update -y && \
-    apt install aria2 && \
-    apt install supervisor && \
-    apt install websockify && \
-    apt install unzip && \
-    apt install wget && \
-    apt install curl && \
+    apt install aria2 -y && \
+    apt install supervisor -y && \
+    apt install websockify -y && \
+    apt install unzip -y && \
+    apt install wget -y && \
+    apt install curl -y && \
     curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     unzip rclone-current-linux-amd64.zip && \
     cp /rclone-*-linux-amd64/rclone /usr/bin/ && \
