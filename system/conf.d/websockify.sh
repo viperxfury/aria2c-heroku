@@ -1,2 +1,2 @@
 #!/bin/bash
-websockify --web /usr/share $PORT localhost:6080
+websockify --web /usr/share $PORT localhost:6800
