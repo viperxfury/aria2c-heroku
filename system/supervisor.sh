@@ -1,3 +1,2 @@
 #!/bin/bash
-set -ex
-exec supervisord -c /system/supervisord.conf
+bash /system/conf.d/aria2c.sh && bash /system/conf.d/
