@@ -1,2 +1,2 @@
 #!/bin/bash
-websockify --web /usr/share $PORT localhost:6800
+websockify --web /AriaNg-master/src' $PORT localhost:6800
